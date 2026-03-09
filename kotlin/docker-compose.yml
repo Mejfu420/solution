@@ -1,0 +1,12 @@
+services:
+  kotlin-ssr:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    ports:
+      - "9000:9000"
+    environment:
+      - PORT=9000
+      - DEV_SERVER_HOST=0.0.0.0
+    command: npm run start
+

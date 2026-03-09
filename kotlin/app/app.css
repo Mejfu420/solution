@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ktl-light-grey: #f4f4f4;
+  --color-ktl-dark-100: rgba(39, 40, 44, 1);
+  --color-ktl-dark-bg-hard: rgba(27, 27, 27, 1);
+  --color-ktl-icon-dark: rgba(39, 40, 44, 0.75);
+  --color-ktl-white-light: rgba(255, 255, 255, 0.75);
+  --color-ktl-primary: #7f52ff;
+  --color-ktl-dark-40: rgba(39, 40, 44, 0.4);
+  --color-ktl-text-hard: rgba(39, 40, 44, 1);
+  --color-ktl-dark-20: rgba(39, 40, 44, 0.2);
+
+  --font-inter: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+
+  --animate-xfast: 100ms;
+  --animate-fast: 300ms;
+}
+
+:root {
+  --ktl-header-height-mobile: 48px;
+}
+
+body {
+  font-family: var(--font-inter);
+}

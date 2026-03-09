@@ -1,0 +1,34 @@
+.header-section {
+  background-color: transparent !important;
+  padding-top: 96px;
+
+  &__actions {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+
+  &__why-btn {
+    margin-left: 16px;
+  }
+
+  &__contributors {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.kto-card-desktop-only {
+  // Domyślnie ukrywamy na małych ekranach
+  display: none !important;
+
+  // Od 768px (standardowy tablet/desktop) przywracamy widoczność
+  @media (min-width: 768px) {
+    display: flex !important; // lub block, zależy jak ustawiony jest cardCn
+  }
+}
