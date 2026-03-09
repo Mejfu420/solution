@@ -1,4 +1,12 @@
-.react-router
-build
+.git
+.idea
+.vscode
+.DS_Store
 node_modules
-README.md
+build
+dist
+.react-router
+.cache
+.env
+.env.*
+*.log
