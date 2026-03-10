@@ -14,6 +14,14 @@ Docker:
 docker compose up
 ```
 
+Build:
+
+```
+npm i
+npm run build
+npm run start
+```
+
 After that, the site will be available at http://localhost:9000.
 
 The site contains only the home page.
