@@ -14,6 +14,8 @@ Docker:
 docker compose up
 ```
 
+After that, the site will be available at http://localhost:9000.
+
 Build:
 
 ```
@@ -22,6 +24,6 @@ npm run build
 npm run start
 ```
 
-After that, the site will be available at http://localhost:9000.
+After that, the site should be available at http://localhost:3000.
 
 The site contains only the home page.
