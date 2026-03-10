@@ -14,7 +14,7 @@ import "./styles/base.scss";
 import baseStyles from "./styles/base.scss?url";
 
 import Header from "./components/Header/Header.jsx";
-// import Footer from "./components/Footer.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 export const links = () => [
   { rel: "icon", type: "image/svg+xml", href: "/images/favicon.svg" },
@@ -52,6 +52,7 @@ export default function App() {
     <div className="global-layout">
       <Header />
       <Outlet />
+      <Footer />
     </div>
   );
 }
@@ -66,16 +67,9 @@ export function ErrorBoundary({ error }) {
   }
 
   return (
-    <html lang="en">
-      <head>
-        <title>{error.status === 404 ? `404 ${message}` : message}</title>
-      </head>
-      <body>
-        <main style={{ padding: "2rem" }}>
-          <h1>{message}</h1>
-          <p>{details}</p>
-        </main>
-      </body>
-    </html>
+    <main style={{ padding: "2rem" }}>
+      <h1>{message}</h1>
+      <p>{details}</p>
+    </main>
   );
 }

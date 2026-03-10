@@ -51,7 +51,7 @@ export function HeaderSection() {
                                 index >= 2 ? 'kto-card-desktop-only' : ''
                             )}
                         >
-                            <img src={card.img} alt="" />
+                            <img className='w-[48px] h-[48px]' src={card.img} alt="" />
                             <h2 className={cn(textCn('rs-h3'), 'kto-offset-top-16')}>{card.title}</h2>
                             <p className={cn(textCn('rs-text-2'), 'kto-offset-top-16')}>{card.subTitle}</p>
                         </a>

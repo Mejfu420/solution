@@ -24,11 +24,10 @@
 }
 
 .kto-card-desktop-only {
-  // Domyślnie ukrywamy na małych ekranach
   display: none !important;
 
-  // Od 768px (standardowy tablet/desktop) przywracamy widoczność
   @media (min-width: 768px) {
-    display: flex !important; // lub block, zależy jak ustawiony jest cardCn
+    display: flex !important;
+    flex-direction: column;
   }
 }
