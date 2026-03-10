@@ -6,6 +6,8 @@ Made by: Mateusz Nitkowski
 
 ## Running
 
+To run a project execute the following command inside the kotlin directory
+
 Docker:
 
 ```
